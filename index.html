@@ -1,222 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Miami Hurricanes Game Review | Florida Gators vs. Miami</title>
-    <style>
-      /* Base Styles (Inherited and adapted) */
-      body {
-        font-family: 'Georgia', serif; /* Changed font for a news/review feel */
-        line-height: 1.7; /* Adjusted line height for easier reading */
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0; /* Lighter background */
-        color: #333;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miami Hurricanes Game Review | Florida Gators vs. Miami</title>
+  <style>
+    /* Base Styles */
+    body {
+      font-family: 'Georgia', serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
+    }
 
-      /* Header - Changed to Miami Hurricanes colors */
-      header {
-        background: #F47321; /* Miami Orange */
-        color: #FFFFFF;
-        padding: 2rem 0;
-        text-align: center;
-        border-bottom: 5px solid #005030; /* Miami Green border */
-      }
+    /* Header */
+    header {
+      background: #F47321;
+      color: #FFFFFF;
+      padding: 2rem 0;
+      text-align: center;
+      border-bottom: 5px solid #005030;
+    }
 
-      header h1 {
-        margin: 0;
-        font-size: 2.8rem;
-        text-transform: uppercase;
-      }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      text-transform: uppercase;
+    }
 
-      header p {
-        margin: 0.5rem 0 0 0;
-        font-size: 1.4rem;
-        font-weight: bold;
-      }
+    header p {
+      margin: 0.5rem 0 0 0;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
 
-      .game-details {
-        font-style: italic;
-        font-size: 1rem;
-        color: #ffe0c2; /* Light orange for secondary info */
-      }
+    .game-details {
+      font-style: italic;
+      font-size: 1rem;
+      color: #ffe0c2;
+    }
 
-      /* Main Content Area */
-      main {
-        max-width: 900px;
-        margin: 2.5rem auto; /* More margin */
-        padding: 2rem;
-        background: #fff;
-        border-radius: 12px; /* Softer corners */
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      }
+    /* Main Content Area */
+    main {
+      max-width: 900px;
+      margin: 2.5rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
 
-      /* Section Headers - Adapted for Review Categories */
-      section {
-        margin-bottom: 3.5rem;
-      }
+    section {
+      margin-bottom: 3.5rem;
+    }
 
-      h2 {
-        border-bottom: 3px solid #005030; /* Miami Green border */
-        color: #005030; /* Miami Green text */
-        padding-bottom: 0.6rem;
-        margin-bottom: 1.5rem;
-        font-size: 2rem;
-        font-weight: 900;
-      }
+    h2 {
+      border-bottom: 3px solid #005030;
+      color: #005030;
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      font-weight: 900;
+    }
 
-      /* Repurposed Classes for Statistics and Key Plays */
-      .player-stat, .team-stat {
-          background-color: #eee;
-          padding: 15px;
-          border-radius: 8px;
-          margin-bottom: 1rem;
-          display: flex; /* Use flex for stat layout */
-          justify-content: space-between;
-          align-items: center;
-      }
-      
-      .stat-label {
-          font-weight: bold;
-          color: #F47321; /* Orange for emphasis */
-          font-size: 1.1rem;
-      }
+    /* Stats Styling */
+    .player-stat, .team-stat {
+      background-color: #eee;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-      .stat-value {
-          font-size: 1.2rem;
-          font-weight: bold;
-      }
+    .stat-label {
+      font-weight: bold;
+      color: #F47321;
+      font-size: 1.1rem;
+    }
 
-      .moment-item {
-          margin-bottom: 1.5rem;
-          border-left: 4px solid #F47321; /* Orange highlight for key moments */
-          padding-left: 1rem;
-      }
+    .stat-value {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
 
-      .moment-type {
-          font-weight: bold;
-          color: #005030;
-      }
-      
-      .impact-conclusion {
-          font-size: 1.3rem;
-          font-weight: 500;
-          padding: 1.5rem;
-          background-color: #f7f7f7;
-          border: 1px dashed #ccc;
-          border-radius: 5px;
-      }
+    /* Key Moments */
+    .moment-item {
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #F47321;
+      padding-left: 1rem;
+    }
 
-      /* Link Styles */
-      a {
-        color: #F47321;
-        text-decoration: none;
-        font-weight: bold;
-      }
+    .moment-type {
+      font-weight: bold;
+      color: #005030;
+    }
 
-      a:hover {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>THE U POST-GAME REPORT 🏈</h1>
-      <p>MIAMI HURRICANES vs. UNIVERSITY OF FLORIDA</p>
-      <div class="game-details">
-        Date: September 20, 2025 | Final Score: Miami **26** - Florida **7**
-      </div>
-    </header>
+    /* Impact Conclusion */
+    .impact-conclusion {
+      font-size: 1.3rem;
+      font-weight: 500;
+      padding: 1.5rem;
+      background-color: #f7f7f7;
+      border: 1px dashed #ccc;
+      border-radius: 5px;
+    }
 
-    <main>
-      
-      <section id="recap">
-        <h2>Narrative Recap: The Defensive Masterpiece</h2>
-        <p>
-          The atmosphere for the rivalry game at Hard Rock Stadium was electric, but the **Miami defense** quickly silenced the Gators, delivering a performance for the ages. The Hurricanes held Florida to a paltry 141 total yards, completely dictating the flow of the game. Miami's offense was methodical, scoring **three touchdowns and two field goals** to build a dominant lead, relying heavily on a physical ground attack. Crucially, their 50% conversion rate on 3rd down kept drives alive, while the defense's perfect shutout on Florida's 3rd-down attempts (0/13) secured the convincing **26-7** victory over their in-state rival.
-        </p>
-      </section>
+    /* Links */
+    a {
+      color: #F47321;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-      <hr>
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>THE U POST-GAME REPORT 🏈</h1>
+    <p>MIAMI HURRICANES vs. UNIVERSITY OF FLORIDA</p>
+    <div class="game-details">
+      Date: September 20, 2025 | Final Score: Miami <strong>26</strong> - Florida <strong>7</strong>
+    </div>
+  </header>
 
-      <section id="analysis">
-        <h2>Player & Team Performance Analysis</h2>
-        
-        <h3>Team Stats Snapshot: Miami vs. Florida (Sept. 20, 2025)</h3>
-        <div class="team-stat">
-            <span class="stat-label">Total Yards</span>
-            <span class="stat-value">Miami: 344 | Florida: 141</span>
-        </div>
-        <div class="team-stat">
-            <span class="stat-label">Turnover Margin</span>
-            <span class="stat-value">Miami: +1</span>
-        </div>
-        <div class="team-stat">
-            <span class="stat-label">3rd Down Conversion Rate</span>
-            <span class="stat-value">Miami: 8/16 (50%) | Florida: 0/13 (0%)</span>
-        </div>
-        <div class="team-stat">
-            <span class="stat-label">4th Down Conversion Rate</span>
-            <span class="stat-value">Miami: 1/1 (100%) | Florida: 3/6 (50%)</span>
-        </div>
-        <div class="team-stat">
-            <span class="stat-label">Field Goals Made</span>
-            <span class="stat-value">Miami: 2/2 | Florida: 0/0</span>
-        </div>
+  <main>
+    <!-- Recap -->
+    <section id="recap">
+      <img src="image.jpg" alt="Miami vs Florida Game Highlight" style="display:block;max-width:100%;height:auto;margin:1.5rem auto;border-radius:10px;">
+      <h2>Narrative Recap: The Defensive Masterpiece</h2>
+      <p>
+        The atmosphere for the rivalry game at Hard Rock Stadium was electric, but the <strong>Miami defense</strong> quickly silenced the Gators, delivering a performance for the ages. The Hurricanes held Florida to a paltry 141 total yards, completely dictating the flow of the game. Miami's offense was methodical, scoring <strong>three touchdowns and two field goals</strong> to build a dominant lead, relying heavily on a physical ground attack. Crucially, their 50% conversion rate on 3rd down kept drives alive, while the defense's perfect shutout on Florida's 3rd-down attempts (0/13) secured the convincing <strong>26-7</strong> victory over their in-state rival.
+      </p>
+    </section>
 
-        <h3>Key Player Breakdown</h3>
-        <div class="player-stat">
-            <span class="stat-label">QB Carson Beck (Miami)</span>
-            <span class="stat-value">17/30, 160 YDS, 0 TD, 1 INT</span>
-        </div>
-        <div class="player-stat">
-            <span class="stat-label">RB Mark Fletcher Jr. (Miami)</span>
-            <span class="stat-value">24 CAR, 116 YDS, 1 TD</span>
-        </div>
-        <div class="player-stat">
-            <span class="stat-label">RB Ajay Allen (Miami)</span>
-            <span class="stat-value">13 CAR, 55 YDS, 1 TD (Placeholder for Brown/2nd RB)</span>
-        </div>
-        <p>
-          The **Defensive Line** was the star, limiting Florida to just 141 total yards and a shocking 0% conversion rate on 3rd down. This dominance allowed Miami's offense to win with a physical run game. **Mark Fletcher Jr.** was the workhorse, chewing up clock and yards, while the dual-threat of Fletcher and **CharMar Brown** (responsible for a game-sealing TD) wore down the Gator defense. The Gators' passing attack, led by **Carson Beck**, struggled immensely, failing to find consistency and throwing a critical interception that highlighted the stifling pressure by the Hurricanes' secondary.
-        </p>
-      </section>
+    <hr>
 
-      <hr>
+    <!-- Analysis -->
+    <section id="analysis">
+      <h2>Player & Team Performance Analysis</h2>
 
-      <section id="moments">
-        <h2>Significant Moments & Turning Points</h2>
-        <ul class="key-moments">
-          <li class="moment-item">
-            <div class="moment-type">SCORING PLAY: 1st Quarter, 3:45</div>
-            <p><strong>Mark Fletcher Jr. Touchdown Run:</strong> Following a successful field goal, Fletcher punched it in from the 2-yard line, capping off a long drive. This run established Miami's physical dominance early and gave them a **10-0** lead.</p>
-          </li>
-          
-          <li class="moment-item">
-            <div class="moment-type">TURNOVER: 3rd Quarter, 10:12</div>
-            <p><strong>Interception of Carson Beck:</strong> The Gators had finally put together a drive and crossed midfield, threatening to score. The Miami defense forced a poor throw, resulting in the critical interception that halted the drive and ultimately led to a Miami **Field Goal** to stretch the lead to **23-7**.</p>
-          </li>
+      <h3>Team Stats Snapshot: Miami vs. Florida (Sept. 20, 2025)</h3>
+      <div class="team-stat"><span class="stat-label">Total Yards</span><span class="stat-value">Miami: 344 | Florida: 141</span></div>
+      <div class="team-stat"><span class="stat-label">Turnover Margin</span><span class="stat-value">Miami: +1</span></div>
+      <div class="team-stat"><span class="stat-label">3rd Down Conversion Rate</span><span class="stat-value">Miami: 8/16 (50%) | Florida: 0/13 (0%)</span></div>
+      <div class="team-stat"><span class="stat-label">4th Down Conversion Rate</span><span class="stat-value">Miami: 1/1 (100%) | Florida: 3/6 (50%)</span></div>
+      <div class="team-stat"><span class="stat-label">Field Goals Made</span><span class="stat-value">Miami: 2/2 | Florida: 0/0</span></div>
 
-          <li class="moment-item">
-            <div class="moment-type">SCORING PLAY: 4th Quarter, 4:20</div>
-            <p><strong>CharMar Brown Game-Sealing Touchdown:</strong> With Miami needing to ice the game, Brown took a sweep into the end zone, pushing the score to the final margin. This play confirmed the win and showcased the depth and power of Miami's ground game.</p>
-          </li>
-        </ul>
-      </section>
+      <h3>Key Player Breakdown</h3>
+      <div class="player-stat"><span class="stat-label">QB Carson Beck (Miami)</span><span class="stat-value">17/30, 160 YDS, 0 TD, 1 INT</span></div>
+      <div class="player-stat"><span class="stat-label">RB Mark Fletcher Jr. (Miami)</span><span class="stat-value">24 CAR, 116 YDS, 1 TD</span></div>
+      <div class="player-stat"><span class="stat-label">RB Ajay Allen (Miami)</span><span class="stat-value">13 CAR, 55 YDS, 1 TD (Placeholder for Brown/2nd RB)</span></div>
 
-      <hr>
-      
-      <section id="conclusion">
-        <h2>The Final Takeaway: Season Impact</h2>
-        <p class="impact-conclusion">
-          This convincing win over the Gators is a **statement victory** for the Hurricanes' program, built on the back of an absolutely elite defensive performance and a relentless rushing attack. Holding a rival to 141 yards and 0% on third downs is a generational effort. The Hurricanes' ability to physically dominate the line of scrimmage offensively and defensively shows they are built for the long haul. This result confirms Miami's status as a top contender and provides tremendous momentum heading into their conference schedule. They have established themselves as the team to beat in the state, with the defense proving they can travel deep into the season.
-        </p>
-        <p style="text-align: center; margin-top: 30px;">
-            **Review By: [Your Name/Reviewer Alias]**
-        </p>
-      </section>
+      <p>
+        The <strong>Defensive Line</strong> was the star, limiting Florida to just 141 total yards and a shocking 0% conversion rate on 3rd down. This dominance allowed Miami's offense to win with a physical run game. <strong>Mark Fletcher Jr.</strong> was the workhorse, chewing up clock and yards, while the dual-threat of Fletcher and <strong>CharMar Brown</strong> (responsible for a game-sealing TD) wore down the Gator defense. The Gators' passing attack, led by <strong>Carson Beck</strong>, struggled immensely, failing to find consistency and throwing a critical interception that highlighted the stifling pressure by the Hurricanes' secondary.
+      </p>
+    </section>
 
-    </main>
-  </body>
+    <hr>
+
+    <!-- Moments -->
+    <section id="moments">
+      <h2>Significant Moments & Turning Points</h2>
+      <ul class="key-moments">
+        <li class="moment-item">
+          <div class="moment-type">SCORING PLAY: 1st Quarter, 3:45</div>
+          <p><strong>Mark Fletcher Jr. Touchdown Run:</strong> Following a successful field goal, Fletcher punched it in from the 2-yard line, capping off a long drive. This run established Miami's physical dominance early and gave them a <strong>10-0</strong> lead.</p>
+        </li>
+        <li class="moment-item">
+          <div class="moment-type">TURNOVER: 3rd Quarter, 10:12</div>
+          <p><strong>Interception of Carson Beck:</strong> The Gators had finally put together a drive and crossed midfield, threatening to score. The Miami defense forced a poor throw, resulting in the critical interception that halted the drive and ultimately led to a Miami <strong>Field Goal</strong> to stretch the lead to <strong>23-7</strong>.</p>
+        </li>
+        <li class="moment-item">
+          <div class="moment-type">SCORING PLAY: 4th Quarter, 4:20</div>
+          <p><strong>CharMar Brown Game-Sealing Touchdown:</strong> With Miami needing to ice the game, Brown took a sweep into the end zone, pushing the score to the final margin. This play confirmed the win and showcased the depth and power of Miami's ground game.</p>
+        </li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <!-- Conclusion -->
+    <section id="conclusion">
+      <h2>The Final Takeaway: Season Impact</h2>
+      <p class="impact-conclusion">
+        This convincing win over the Gators is a <strong>statement victory</strong> for the Hurricanes' program, built on the back of an absolutely elite defensive performance and a relentless rushing attack. Holding a rival to 141 yards and 0% on third downs is a generational effort. The Hurricanes' ability to physically dominate the line of scrimmage offensively and defensively shows they are built for the long haul. This result confirms Miami's status as a top contender and provides tremendous momentum heading into their conference schedule. They have established themselves as the team to beat in the state, with the defense proving they can travel deep into the season.
+      </p>
+
+      <p style="text-align: center; margin-top: 30px;">
+        <strong>Review By: Isabella Rosanio</strong>
+      </p>
+    </section>
+  </main>
+</body>
 </html>
